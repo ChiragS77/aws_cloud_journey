@@ -1,0 +1,258 @@
+
+---
+
+# ☁️ AWS Basics Cheat Sheet
+
+---
+
+## 🔧 AWS CLI Configuration
+
+The AWS CLI is used to connect your local system with AWS services via terminal.
+
+### 🖥️ Command
+
+```bash
+aws configure
+```
+
+### 📥 What AWS asks for:
+
+* AWS Access Key ID
+* AWS Secret Access Key
+* Default Region
+* Output Format (optional)
+
+### 🧾 Example
+
+```bash
+aws configure
+
+AWS Access Key ID: AKIA************
+AWS Secret Access Key: ****************
+Default region name: ap-south-1
+Default output format: json
+```
+
+---
+
+## 🔐 AWS IAM Best Practices
+
+**IAM (Identity and Access Management)** is used to manage users and permissions securely.
+
+### ❌ Avoid
+
+* Using root account for daily tasks
+* Sharing access keys or passwords
+
+### ✅ Recommended Practices
+
+* Create users instead of using root
+* Assign users to groups
+* Use group-based permissions
+* Enable MFA (Multi-Factor Authentication)
+* Apply strong password policies
+* Regularly audit permissions
+
+---
+
+## 🔒 Password Policy Setup
+
+### 📍 Path in AWS Console
+
+```text
+IAM → Account Settings → Password Policy
+```
+
+### ⚙️ You can configure:
+
+* Minimum password length
+* Use of symbols
+* Use of numbers
+* Password expiration
+* Password reuse prevention
+
+---
+
+## 📊 IAM Audit & Reports
+
+### 📄 IAM Credential Report
+
+Used to monitor user security.
+
+### 📍 Path
+
+```text
+IAM → Credential Report → Download Report
+```
+
+### 🔍 Helps you check:
+
+* Password activity
+* MFA enabled status
+* Access key age
+* Unused accounts
+
+---
+
+## 🛠️ AWS Access Analyzer
+
+AWS Access Analyzer helps detect security risks.
+
+### 🔍 Detects:
+
+* Public access to resources
+* External account access
+* Misconfigured permissions
+
+---
+
+## ☁️ Infrastructure as Code (IaC)
+
+Infrastructure as Code means managing infrastructure using code instead of manual setup.
+
+### 🚀 Benefits
+
+* Faster deployment
+* Automation
+* Reusable templates
+* Easy management
+
+---
+
+## ⚙️ IaC Tools
+
+### 1️⃣ Terraform
+
+* Multi-cloud IaC tool
+* Works with AWS, Azure, GCP
+
+### 2️⃣ AWS CloudFormation
+
+* AWS-native IaC service
+
+---
+
+## 🏗️ Resources You Can Create Using IaC
+
+* EC2 (Virtual Machines)
+* VPC (Networking)
+* S3 (Storage)
+* RDS (Databases)
+* Lambda (Serverless Functions)
+
+---
+
+## 🖥️ AWS Interaction Methods
+
+| Method      | Used Through       |
+| ----------- | ------------------ |
+| AWS Console | Browser (GUI)      |
+| AWS CLI     | Terminal           |
+| AWS SDK     | Code (Programming) |
+| IaC Tools   | Config Files       |
+
+---
+
+## 🔑 AWS Authentication (CLI)
+
+AWS CLI authentication uses:
+
+* Access Key
+* Secret Access Key
+
+---
+
+## 📦 AWS SDK (Software Development Kit)
+
+AWS SDK allows applications to interact with AWS services programmatically.
+
+### 💻 Supported Languages:
+
+* Python
+* Java
+* Node.js
+* Go
+* .NET
+
+### 🚀 Real Use Cases:
+
+* Upload files to S3
+* Trigger Lambda functions
+* Manage EC2 instances
+* Connect to databases
+
+---
+
+## 🚀 Best Use Cases Summary
+
+| Tool           | Best For                   |
+| -------------- | -------------------------- |
+| AWS CLI        | Automation & scripting     |
+| AWS SDK        | Application development    |
+| Terraform      | Multi-cloud infrastructure |
+| CloudFormation | AWS infrastructure         |
+| AWS Console    | Beginners & manual work    |
+
+---
+
+## 🧠 Quick Revision
+
+```text
+AWS Console   → Manual Management  
+AWS CLI       → Terminal Commands  
+AWS SDK       → Programmatic Access  
+Terraform     → Multi-cloud IaC  
+CloudFormation→ AWS-native IaC  
+IAM           → Security & Permissions  
+```
+
+---
+
+## 📚 Small Definitions
+
+### AWS CLI
+
+Command-line tool to manage AWS services.
+
+### IAM
+
+Service used for authentication and authorization.
+
+### MFA
+
+Multi-Factor Authentication for extra security.
+
+### IaC
+
+Managing infrastructure using code instead of manual setup.
+
+---
+
+## 🎯 Learning Path (Recommended)
+
+```text
+AWS Console
+   ↓
+AWS CLI
+   ↓
+IAM Security
+   ↓
+AWS SDK
+   ↓
+Terraform / CloudFormation
+```
+
+---
+
+## ⭐ Final Tip
+
+Start small and practice daily. Hands-on experience is the fastest way to master AWS. 🚀
+
+---
+
+If you want, I can also:
+✅ Turn this into a **professional GitHub README with badges & table of contents**
+✅ Or convert it into a **PDF notes sheet for revision**
+✅ Or add **diagrams + architecture visuals for AWS concepts**
+
+Just tell me 👍
